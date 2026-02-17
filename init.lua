@@ -1,5 +1,6 @@
 vim.o.breakindent = true
 vim.o.cursorline = true
+vim.o.number = true
 vim.o.relativenumber = true
 vim.o.tabstop = 2
 vim.o.wrap = false
@@ -13,7 +14,8 @@ vim.keymap.set("n", "<leader>lf", vim.lsp.buf.format, { desc = "Format current b
 
 vim.pack.add({
 	"https://github.com/vague-theme/vague.nvim",
-	"https://github.com/neovim/nvim-lspconfig"
+	"https://github.com/neovim/nvim-lspconfig",
+	"https://github.com/nvim-treesitter/nvim-treesitter"
 })
 
 require("vague").setup {

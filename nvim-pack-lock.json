@@ -4,6 +4,10 @@
       "rev": "44acfe887d4056f704ccc4f17513ed41c9e2b2e6",
       "src": "https://github.com/neovim/nvim-lspconfig"
     },
+    "nvim-treesitter": {
+      "rev": "2bd9b9b4f12eed175fba35ca2db8e8584546a4ec",
+      "src": "https://github.com/nvim-treesitter/nvim-treesitter"
+    },
     "vague.nvim": {
       "rev": "e99a0380acc48665e77766d786155e7b126eb34a",
       "src": "https://github.com/vague-theme/vague.nvim"
