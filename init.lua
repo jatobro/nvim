@@ -17,6 +17,7 @@ vim.keymap.set("n", "<leader>w", "<Cmd>update<CR>")
 vim.keymap.set("n", "<leader>q", "<Cmd>:quit<CR>")
 vim.keymap.set("n", "<leader>e", vim.cmd.Ex)
 vim.keymap.set("n", "<leader>lf", vim.lsp.buf.format, { desc = "Format current buffer" })
+vim.keymap.set("n", "<leader>lg", vim.cmd.LazyGit, { desc = "Lazy Git" })
 
 vim.api.nvim_create_autocmd("TextYankPost", {
 	group = vim.api.nvim_create_augroup("highlight-yank", { clear = true }),
@@ -26,7 +27,8 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 vim.pack.add({
 	"https://github.com/vague-theme/vague.nvim",
 	"https://github.com/neovim/nvim-lspconfig",
-	"https://github.com/nvim-treesitter/nvim-treesitter"
+	"https://github.com/nvim-treesitter/nvim-treesitter",
+	"https://github.com/kdheepak/lazygit.nvim"
 })
 
 vim.lsp.enable({ "lua_ls", "rust_analyzer" })
