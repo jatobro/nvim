@@ -1,5 +1,14 @@
 {
   "plugins": {
+    "LuaSnip": {
+      "rev": "642b0c595e11608b4c18219e93b88d7637af27bc",
+      "src": "https://github.com/L3MON4D3/LuaSnip"
+    },
+    "blink.cmp": {
+      "rev": "7c9777bae52009a198a2e6d56bc9185dbf3d151f",
+      "src": "https://github.com/saghen/blink.cmp",
+      "version": ">=0.0.0"
+    },
     "lazygit.nvim": {
       "rev": "a04ad0dbc725134edbee3a5eea29290976695357",
       "src": "https://github.com/kdheepak/lazygit.nvim"
@@ -11,6 +20,10 @@
     "nvim-treesitter": {
       "rev": "2bd9b9b4f12eed175fba35ca2db8e8584546a4ec",
       "src": "https://github.com/nvim-treesitter/nvim-treesitter"
+    },
+    "telescope.nvim": {
+      "rev": "5255aa27c422de944791318024167ad5d40aad20",
+      "src": "https://github.com/nvim-telescope/telescope.nvim"
     },
     "vague.nvim": {
       "rev": "e99a0380acc48665e77766d786155e7b126eb34a",
