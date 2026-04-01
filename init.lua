@@ -19,6 +19,7 @@ vim.pack.add({
 	"https://github.com/nvim-lua/plenary.nvim",
 	"https://github.com/nvim-tree/nvim-web-devicons",
 	"https://github.com/neovim/nvim-lspconfig",
+	"https://github.com/mason-org/mason.nvim",
 	"https://github.com/kdheepak/lazygit.nvim",
 	{ src = "https://github.com/Saghen/blink.cmp", version = vim.version.range("*") },
 	"https://github.com/L3MON4D3/LuaSnip"
@@ -57,6 +58,8 @@ require("actions-preview").setup({
 		require("telescope.themes").get_dropdown(), {}
 	)
 })
+
+require("mason").setup()
 
 require("blink.cmp").setup({
 	keymap = { preset = "default" },
