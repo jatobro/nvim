@@ -7,7 +7,6 @@ vim.o.expandtab = true
 vim.o.guicursor = "n-v-c-i:block"
 vim.o.number = true
 vim.o.relativenumber = true
-vim.o.shortmess:append("c")
 vim.o.smartcase = true
 vim.o.smartindent = true
 vim.o.smarttab = true
@@ -66,7 +65,7 @@ require("mason").setup()
 
 vim.api.nvim_create_autocmd("LspAttach", {
 	group = vim.api.nvim_create_augroup("lsp-completion", { clear = true }),
-	callback = function()
+	callback = function(args)
 		local client_id = args.data.client_id
 		if not client_id then
 			return
