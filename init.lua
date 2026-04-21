@@ -45,5 +45,4 @@ require("jatobro.which-key")
 require("jatobro.mini")
 require("jatobro.todo-comments")
 require("jatobro.conform")
-
-vim.cmd("colorscheme vague")
+require("jatobro.colorscheme")
