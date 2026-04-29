@@ -1,8 +1,9 @@
+local actions = require("telescope.actions")
+
 require("telescope").setup({
 	defaults = {
 		preview = { treesitter = true },
 		color_devicons = true,
-		sorting_strategy = "ascending",
 		borderchars = {
 			"",
 			"",
@@ -14,10 +15,14 @@ require("telescope").setup({
 			"",
 		},
 		path_displays = { "smart" },
+		mappings = {
+			n = {
+				["q"] = actions.close,
+			},
+		},
 		layout_config = {
 			height = 100,
 			width = 400,
-			prompt_position = "top",
 			preview_cutoff = 40,
 		},
 	},
@@ -33,3 +38,4 @@ local builtin = require("telescope.builtin")
 vim.keymap.set("n", "<leader>ff", builtin.find_files, { desc = "Telescope find files" })
 vim.keymap.set("n", "<leader>fg", builtin.live_grep, { desc = "Telescope live grep" })
 vim.keymap.set("n", "<leader>fb", builtin.buffers, { desc = "Telescope buffers" })
+vim.keymap.set("n", "<leader>fh", builtin.help_tags, { desc = "Telescope help tags" })

@@ -4,7 +4,7 @@ vim.keymap.set("n", "<leader>w", "<Cmd>update<CR>")
 vim.keymap.set("n", "<leader>q", "<Cmd>:quit<CR>")
 vim.keymap.set("n", "<leader>lf", vim.lsp.buf.format, { desc = "Format current buffer" })
 vim.keymap.set("n", "<leader>e", vim.cmd.Ex, { desc = "Open file tree" })
-vim.keymap.set("n", "<leader>lg", vim.cmd.LazyGit, { desc = "Lazy Git" })
+vim.keymap.set("n", "<leader>lg", vim.cmd.LazyGit, { desc = "Lazy git" })
 
 vim.keymap.set("n", "<C-h>", "<C-w><C-h>", { desc = "Move focus to the left window" })
 vim.keymap.set("n", "<C-l>", "<C-w><C-l>", { desc = "Move focus to the right window" })
