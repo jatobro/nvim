@@ -19,3 +19,7 @@ vim.pack.add({
 	"https://github.com/NMAC427/guess-indent.nvim",
 	"https://github.com/stevearc/conform.nvim",
 })
+
+vim.api.nvim_create_user_command("PackAdd", function(opts)
+	vim.pack.add(opts.fargs)
+end, { nargs = "+", desc = "Add plugins (PackAdd user/repo)" })
