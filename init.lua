@@ -34,6 +34,8 @@ end)
 
 vim.g.mapleader = " "
 
+require("vim._core.ui2").enable({})
+
 require("jatobro.pack")
 require("jatobro.telescope")
 require("jatobro.actions")
@@ -44,5 +46,6 @@ require("jatobro.gitsigns")
 require("jatobro.which-key")
 require("jatobro.mini")
 require("jatobro.todo-comments")
+require("jatobro.treesitter")
 require("jatobro.conform")
 require("jatobro.colorscheme")

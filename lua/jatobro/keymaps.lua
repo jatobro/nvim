@@ -2,7 +2,10 @@ vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
 
 vim.keymap.set("n", "<leader>w", "<Cmd>update<CR>")
 vim.keymap.set("n", "<leader>q", "<Cmd>:quit<CR>")
+vim.keymap.set("n", "<leader>re", "<Cmd>:restart<CR>", { desc = "Restart Neovim" })
+
 vim.keymap.set("n", "<leader>lf", vim.lsp.buf.format, { desc = "Format current buffer" })
+
 vim.keymap.set("n", "<leader>e", vim.cmd.Ex, { desc = "Open file tree" })
 vim.keymap.set("n", "<leader>lg", vim.cmd.LazyGit, { desc = "Lazy git" })
 
