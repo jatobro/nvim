@@ -9,6 +9,7 @@ vim.pack.add({
 	"https://github.com/mason-org/mason.nvim",
 	"https://github.com/kdheepak/lazygit.nvim",
 	"https://github.com/lewis6991/gitsigns.nvim",
+	"https://github.com/folke/which-key.nvim",
 	"https://github.com/nvim-telescope/telescope-fzf-native.nvim",
 	"https://github.com/nvim-telescope/telescope-ui-select.nvim",
 	"https://github.com/folke/todo-comments.nvim",
