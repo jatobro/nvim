@@ -1,7 +1,6 @@
 vim.pack.add({
 	"https://github.com/vague-theme/vague.nvim",
 	{ src = "https://github.com/nvim-treesitter/nvim-treesitter", version = "main" },
-	"https://github.com/aznhe21/actions-preview.nvim",
 	"https://github.com/nvim-telescope/telescope.nvim",
 	"https://github.com/nvim-lua/plenary.nvim",
 	"https://github.com/nvim-tree/nvim-web-devicons",

@@ -38,7 +38,6 @@ require("vim._core.ui2").enable({})
 
 require("jatobro.pack")
 require("jatobro.telescope")
-require("jatobro.actions")
 require("jatobro.lsp")
 require("jatobro.autocmds")
 require("jatobro.keymaps")
