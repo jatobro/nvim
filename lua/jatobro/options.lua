@@ -1,5 +1,7 @@
 vim.g.mapleader = " "
 
+vim.g.have_nerd_font = true
+
 vim.o.autocomplete = true
 vim.o.breakindent = true
 vim.o.completeopt = "menu,menuone,noselect,popup"
