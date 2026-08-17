@@ -16,6 +16,7 @@ vim.o.mouse = "a"
 vim.o.number = true
 vim.o.relativenumber = true
 vim.o.scrolloff = 10
+vim.o.shiftwidth = 2
 vim.o.showmode = false
 vim.o.signcolumn = "yes"
 vim.o.smartcase = true
