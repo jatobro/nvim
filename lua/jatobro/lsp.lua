@@ -1,6 +1,6 @@
 require("mason").setup()
 
-vim.lsp.enable({ "lua_ls", "rust_analyzer", "ruff", "pyright", "tailwindcss", "ts_ls" })
+vim.lsp.enable({ "lua_ls", "rust_analyzer", "ruff", "pyright", "tailwindcss", "ts_ls", "terraformls", "gopls" })
 
 vim.diagnostic.config({
 	update_in_insert = false,
