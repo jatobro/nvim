@@ -5,6 +5,7 @@ require("vague").setup({
 		hl.NormalNC = { bg = "none" }
 		hl.SignColumn = { bg = "none" }
 		hl.NormalFloat = { bg = "none" }
+		hl.Cursor = { fg = "#141415", bg = "#cdcdcd" }
 	end,
 })
 
