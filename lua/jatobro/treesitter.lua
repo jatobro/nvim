@@ -21,10 +21,6 @@ local ensure_installed = {
 require("nvim-treesitter").install(ensure_installed)
 
 vim.api.nvim_create_autocmd("FileType", {
-	callback = function()
-		local lang = vim.treesitter.language.get_lang(vim.bo.filetype) or vim.bo.filetype
-		if vim.tbl_contains(ensure_installed, lang) then
-			vim.treesitter.start()
-		end
-	end,
+	pattern = { "<filetype>" },
+  callback = function() vim.treesitter.start() end
 })

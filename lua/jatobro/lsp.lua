@@ -21,13 +21,6 @@ vim.api.nvim_create_autocmd("LspAttach", {
 			return
 		end
 
-		local client = vim.lsp.get_client_by_id(client_id)
-		if client and client:supports_method("textDocument/completion") then
-			vim.lsp.completion.enable(true, client_id, buf, {
-				autotrigger = true,
-			})
-		end
-
 		local builtin = require("telescope.builtin")
 
 		vim.keymap.set("n", "grn", vim.lsp.buf.rename, { buffer = buf, desc = "LSP: Rename" })
@@ -39,6 +32,8 @@ vim.api.nvim_create_autocmd("LspAttach", {
 		vim.keymap.set("n", "grt", builtin.lsp_type_definitions, { buffer = buf, desc = "LSP: Go to Type Definition" })
 		vim.keymap.set("n", "gO", builtin.lsp_document_symbols, { buffer = buf, desc = "LSP: Document Symbols" })
 		vim.keymap.set("n", "gW", builtin.lsp_dynamic_workspace_symbols, { buffer = buf, desc = "LSP: Workspace Symbols" })
+
+		local client = vim.lsp.get_client_by_id(client_id)
 
 		if client and client:supports_method("textDocument/inlayHint", buf) then
 			vim.keymap.set("n", "<leader>th", function()
