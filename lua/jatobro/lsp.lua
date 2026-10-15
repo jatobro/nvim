@@ -1,6 +1,18 @@
 require("mason").setup()
 
-vim.lsp.enable({ "lua_ls", "rust_analyzer", "ruff", "pyright", "tailwindcss", "ts_ls", "terraformls", "gopls" })
+vim.lsp.config("gopls", {
+	settings = {
+		gopls = {
+			analyses = {
+				unusedparams = true,
+			},
+			staticcheck = true,
+			semanticTokens = true,
+		},
+	},
+})
+
+vim.lsp.enable({ "lua_ls", "rust_analyzer", "ruff", "pyright", "tailwindcss", "ts_ls", "terraformls", "gopls", "buf_ls" })
 
 vim.diagnostic.config({
 	update_in_insert = false,
