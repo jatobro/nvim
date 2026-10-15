@@ -20,6 +20,5 @@ require("conform").setup({
 		css = { "prettierd" },
 		html = { "prettierd" },
 		json = { "prettierd" },
-		terraform = { "terraform_fmt" },
 	},
 })
